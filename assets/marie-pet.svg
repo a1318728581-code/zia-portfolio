@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 180" fill="none" aria-label="白色长毛猫玛丽">
+<defs><linearGradient id="marie-fur" x1="45" y1="35" x2="115" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#fffefa"/><stop offset=".7" stop-color="#fffaf9"/><stop offset="1" stop-color="#eae2ef"/></linearGradient><linearGradient id="marie-ear" x1="30" y1="15" x2="55" y2="60"><stop stop-color="#f3c4d4"/><stop offset="1" stop-color="#fbe5e6"/></linearGradient><linearGradient id="marie-eye" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#6d7caf"/><stop offset="1" stop-color="#b4d7ec"/></linearGradient></defs>
+<g stroke="#c8b5c6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<g class="cat-tail"><path d="M105 150C145 164 156 131 147 111C143 102 133 103 133 115C135 129 124 130 116 124" fill="url(#marie-fur)"/><path d="M141 112Q149 133 132 142" stroke="#e4d6e5"/></g>
+<g class="cat-body"><path d="M54 103C40 116 36 138 43 156L36 160L48 164Q75 180 109 163L123 158L115 151C121 130 109 111 99 104Z" fill="url(#marie-fur)"/>
+<path d="M67 126Q61 141 63 159M94 126Q100 143 97 159" stroke="#e1d3e1"/><path class="cat-paw-left" d="M60 151C44 150 44 168 60 168C74 169 74 153 60 151Z" fill="#fffdfb"/><path class="cat-paw-right" d="M101 151C85 150 85 168 100 168C115 168 115 152 101 151Z" fill="#fffdfb"/><path d="M56 161V165M62 162V166M97 161V165M103 162V166" stroke="#d8c8d7"/></g>
+<g class="cat-head"><path d="M30 65Q17 43 24 16Q44 18 59 39M100 37Q118 16 138 18Q143 47 128 66" fill="url(#marie-fur)"/>
+<path d="M31 42L30 26Q43 29 49 41M112 41Q123 27 132 28L129 48" fill="url(#marie-ear)" stroke="#e1b9c8"/>
+<path d="M40 43L35 37L35 48Q22 58 23 76L17 83L25 85L20 94L32 94L29 103L42 102Q52 120 81 120Q108 120 119 103L132 104L129 95L141 95L134 85L143 82L134 76Q136 55 119 45L123 37L112 42Q104 34 91 34L84 26L80 35L72 29L66 37Q52 35 40 43Z" fill="url(#marie-fur)"/>
+<path d="M72 39L68 45M79 37L76 44M87 40L84 45" stroke="#e4d6e5"/>
+<g class="cat-eyes"><ellipse cx="55" cy="75" rx="12" ry="16" fill="url(#marie-eye)" stroke="#86778e"/><ellipse cx="105" cy="75" rx="12" ry="16" fill="url(#marie-eye)" stroke="#86778e"/><ellipse cx="57" cy="75" rx="6" ry="12" fill="#4b425e" stroke="none"/><ellipse cx="103" cy="75" rx="6" ry="12" fill="#4b425e" stroke="none"/><ellipse cx="52" cy="68" rx="4" ry="5" fill="white" stroke="none"/><ellipse cx="100" cy="68" rx="4" ry="5" fill="white" stroke="none"/><circle cx="60" cy="83" r="2" fill="white" stroke="none"/><circle cx="109" cy="83" r="2" fill="white" stroke="none"/></g>
+<path class="cat-closed-eyes" d="M44 77Q55 66 66 77M94 77Q105 66 116 77" stroke="#86778e" stroke-width="2.5"/>
+<ellipse cx="41" cy="92" rx="9" ry="4" fill="#f3d1d9" opacity=".65" stroke="none"/><ellipse cx="119" cy="92" rx="9" ry="4" fill="#f3d1d9" opacity=".65" stroke="none"/>
+<path d="M75 91Q80 87 85 91Q84 97 80 97Q76 97 75 91Z" fill="#df9eae" stroke="#cf94a8"/><path d="M80 97V100Q73 108 68 100M80 100Q87 108 92 100" stroke="#ba8fa4"/>
+<path d="M43 93L24 89M43 98L22 101M117 93L137 89M117 98L140 101" stroke="#cdb9cc" stroke-width="1.2"/>
+<g class="cat-bow"><path d="M74 118Q53 103 51 116Q48 137 74 126M86 118Q107 103 110 117Q112 137 86 126" fill="#c9a9e4" stroke="#aa89c4"/><path d="M75 125L67 140L79 135L83 141L86 125" fill="#cfb1e7" stroke="#aa89c4"/><path d="M60 118L72 122M101 118L87 122" stroke="#ead8f5"/><rect x="73" y="116" width="15" height="12" rx="5" fill="#b691d4" stroke="#aa89c4"/></g></g>
+<g class="cat-guide-paw"><path d="M50 130Q30 123 28 108C26 98 15 99 16 111Q18 137 46 144" fill="url(#marie-fur)"/><path d="M18 106L22 108M20 103L24 106" stroke="#d8c8d7"/></g>
+</g></svg>

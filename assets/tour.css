@@ -1,0 +1,40 @@
+.narrator { z-index: 90; width: 272px; pointer-events: none; transition: left .55s ease, top .55s ease; }
+.narrator > * { pointer-events: auto; }
+.narrator .cat-btn { width: 88px; height: 92px; overflow: visible; border: 0; border-radius: 0; padding: 0; background: transparent; box-shadow: none; position: relative; transform-origin: center bottom; }
+.narrator .cat-btn::after { content: ''; position:absolute; bottom:2px; left:22%; width:56%; height:7px; background:#48314b1b; border-radius:50%; z-index:-1; }
+.narrator .cat-btn:hover { transform: translateY(-3px) rotate(-3deg); }
+.narrator .marie-slot { width:100%; height:100%; border-radius:0; overflow:hidden; background-image:url('marie-sprites.png'); background-size:200% 200%; background-position:0 0; background-repeat:no-repeat; }
+.narrator.blinking .marie-slot { background-position:100% 0; }
+.narrator.walking .marie-slot { background-position:0 100%; animation:marie-step .2s ease-in-out infinite alternate; }
+.narrator.touring:not(.walking) .marie-slot { background-position:100% 100%; }
+@keyframes marie-step { from { transform:translateY(0) rotate(-2deg); } to { transform:translateY(-4px) rotate(2deg); } }
+.narrator .marie-slot img { display:none; }
+.narrator .bubble { max-width:none; width:272px; background:#fffdfef5; border:1px solid #e3d7e9; border-radius:18px 18px 5px 18px; padding:16px; font:13px/1.8 var(--font-body); color:var(--ink-soft); box-shadow:0 10px 32px #2b223312; backdrop-filter:blur(12px); }
+.tour-heading { display:block; font-size:15px; color:var(--ink); margin-bottom:6px; }
+.tour-count { display:block; font:11px var(--font-en); color:var(--ink-faint); margin-bottom:8px; }
+.tour-actions { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:14px; }
+.tour-actions button { cursor:pointer; border-radius:20px; padding:7px 12px; font:12px var(--font-body); border:1px solid transparent; }
+.tour-primary { background:var(--purple); color:#fff; }
+.tour-secondary { background:transparent; color:var(--ink-soft); border-color:var(--line) !important; }
+.marie-tour-target { outline:2px solid #b99bd6; outline-offset:7px; border-radius:12px; transition:outline-color .3s; }
+.profile-copy.marie-tour-target { outline-offset:12px; }
+.duo-card.mr .avatar { background-image:url('marie-sprites.png'); background-size:200% 200%; background-position:0 0; border-radius:0; }
+.duo-card.mr .avatar img { display:none; }
+@media(max-width:650px) { .narrator { width:238px; right:10px; bottom:10px; } .narrator .bubble { width:238px; padding:13px; font-size:12px; line-height:1.7; } .narrator .cat-btn { width:64px; height:68px; } .tour-heading { font-size:14px; } .tour-actions { margin-top:10px; gap:6px; } .tour-actions button { padding:7px 10px; } }
+@media(prefers-reduced-motion:reduce) { .narrator { transition:none; } .narrator.walking .marie-slot { animation:none; } }
+/* Native vector parts let the companion blink, wave and walk independently. */
+.narrator .marie-slot, .duo-card.mr .avatar { background-image:none; }
+.narrator .marie-slot { overflow:visible; }
+.marie-slot > svg { width:100%; height:100%; overflow:visible; }
+.cat-closed-eyes, .cat-guide-paw { visibility:hidden; }
+.cat-tail { transform-origin:110px 145px; animation:marie-tail 7s ease-in-out infinite; }
+.narrator.blinking .cat-eyes { visibility:hidden; }
+.narrator.blinking .cat-closed-eyes { visibility:visible; }
+.narrator.touring:not(.walking) .cat-guide-paw { visibility:visible; transform-origin:46px 140px; animation:marie-wave 1.3s ease-in-out 2; }
+.narrator.walking .cat-paw-left { animation:marie-paw .3s ease-in-out infinite alternate; }
+.narrator.walking .cat-paw-right { animation:marie-paw .3s .15s ease-in-out infinite alternate; }
+.narrator .cat-btn:hover .cat-head { transform:rotate(-3deg); transform-origin:80px 110px; transition:transform .25s; }
+@keyframes marie-tail { 0%,70%,100% { transform:rotate(0); } 82% { transform:rotate(7deg); } 92% { transform:rotate(-4deg); } }
+@keyframes marie-paw { to { transform:translateY(-5px); } }
+@keyframes marie-wave { 50% { transform:rotate(-12deg); } }
+@media(prefers-reduced-motion:reduce) { .cat-tail, .cat-guide-paw, .cat-paw-left, .cat-paw-right { animation:none !important; } }

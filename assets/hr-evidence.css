@@ -1,0 +1,9 @@
+.hr-evidence { border-top:1px solid var(--line); padding-top:24px; margin-top:26px; }
+.hr-evidence > h4 { font-size:23px; margin:12px 0 18px; }
+.qa-samples { overflow-x:auto; }
+.qa-samples table { width:100%; border-collapse:collapse; text-align:left; font-size:12px; line-height:1.8; }
+.qa-samples th { background:var(--paper); font-weight:500; color:var(--ink); }
+.qa-samples th,.qa-samples td { padding:13px 15px; border-bottom:1px solid var(--line); vertical-align:top; }
+.qa-samples td { color:var(--ink-soft); }
+.qa-samples th:first-child { width:27%; }
+@media(max-width:600px) { .qa-samples table { min-width:520px; } .hr-evidence > h4 { font-size:21px; } }
